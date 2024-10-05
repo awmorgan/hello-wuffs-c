@@ -15,7 +15,7 @@
 #define WUFFS_CONFIG__MODULE__BASE
 
 #define WUFFS_IMPLEMENTATION
-#include "./parse.c"
+#include "./build/gen/parse.c"
 
 uint32_t parse(char* p, size_t n) {
   wuffs_base__status status;
