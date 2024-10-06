@@ -20,10 +20,11 @@ mkdir -p build/gen
 wuffs-c gen -package_name base > build/gen/wuffs-base.c
 wuffs-c gen -package_name demo < parse.wuffs > build/gen/parse.c
 
-echo --- C Implementation Prints ---
-$CC main.c naive-parse.c -o build/n.out
-./build/n.out
+# echo --- C Implementation Prints ---
+# $CC main.c naive-parse.c -o build/n.out
+# ./build/n.out
 
 echo ------ Wuffs Impl Prints ------
-$CC main.c wuffs-parse.c -o build/w.out
+# $CC main.c wuffs-parse.c -o build/w.out
+$CC main.c -o build/w.out
 ./build/w.out
